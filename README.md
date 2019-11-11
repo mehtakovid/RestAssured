@@ -1,2 +1,2 @@
 # RestAssured
-This is a Test Suite for google API tests using Rest Assured
+Contains different Tests based on Google APIs
