@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-11-11T20:50:10 IST" name="Default suite" finished-at="2019-11-11T20:50:21 IST" duration-ms="10478">
+  <suite started-at="2019-11-11T21:34:11 IST" name="Default suite" finished-at="2019-11-11T21:34:22 IST" duration-ms="11631">
     <groups>
     </groups>
-    <test started-at="2019-11-11T20:50:10 IST" name="Default test" finished-at="2019-11-11T20:50:21 IST" duration-ms="10478">
+    <test started-at="2019-11-11T21:34:11 IST" name="Default test" finished-at="2019-11-11T21:34:22 IST" duration-ms="11631">
       <class name="RestAssuredProject.AbusiveExperienceAPITest">
-        <test-method signature="AbusiveExperienceTestRun()[pri:0, instance:RestAssuredProject.AbusiveExperienceAPITest@223f3642]" started-at="2019-11-11T20:50:10 IST" name="AbusiveExperienceTestRun" finished-at="2019-11-11T20:50:21 IST" duration-ms="10365" status="PASS">
+        <test-method signature="AbusiveStatusTestRun(java.lang.String)[pri:0, instance:RestAssuredProject.AbusiveExperienceAPITest@3c72f59f]" started-at="2019-11-11T21:34:11 IST" name="AbusiveStatusTestRun" data-provider="AbusiveStatusTestData" finished-at="2019-11-11T21:34:15 IST" duration-ms="4449" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[amazon]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AbusiveExperienceTestRun -->
+        </test-method> <!-- AbusiveStatusTestRun -->
+        <test-method signature="ViolatingSitesTestRun()[pri:0, instance:RestAssuredProject.AbusiveExperienceAPITest@3c72f59f]" started-at="2019-11-11T21:34:15 IST" name="ViolatingSitesTestRun" finished-at="2019-11-11T21:34:22 IST" duration-ms="7073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ViolatingSitesTestRun -->
       </class> <!-- RestAssuredProject.AbusiveExperienceAPITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
