@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RestAssuredProject.AbusiveExperienceAPITest">
+      <class name="RestAssuredProject.GmailAPITest">
         <methods>
-          <include name="AbusiveStatusTestRun"/>
+          <include name="getCode"/>
         </methods>
-      </class> <!-- RestAssuredProject.AbusiveExperienceAPITest -->
+      </class> <!-- RestAssuredProject.GmailAPITest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
