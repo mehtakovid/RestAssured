@@ -1,6 +1,8 @@
 package RestAssuredProject;
 
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
+
 import static io.restassured.RestAssured.given;
 import io.restassured.response.Response;
 
@@ -17,6 +19,9 @@ public class AbusiveExperienceAPI {
 		get("/v1/violatingSites").
 		
 		then().assertThat().statusCode(200).extract().response();
+		
+//		JsonPath jsonPathEvaluator = res.jsonPath();
+//		jsonPathEvaluator.get("")
 		
 		System.out.println("Violiting Sites resposne is : " +res.asString());
 		
