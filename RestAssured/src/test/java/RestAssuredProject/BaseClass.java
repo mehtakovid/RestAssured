@@ -97,8 +97,6 @@ public class BaseClass {
 	public static void getBearerAccessToken() {
 		
 		RestAssured.baseURI="https://www.googleapis.com";
-		
-		System.out.println("The Code is :- " +BrowserCode);
 		Response res = given().urlEncodingEnabled(false)
 		.queryParam("code", BrowserCode)
 		.queryParam("client_id", "745077292106-oihr15fk3od8mn5i12eb1jlkk67352eh.apps.googleusercontent.com")

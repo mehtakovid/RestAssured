@@ -1,6 +1,6 @@
 package RestAssuredProject;
 
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class GmailAPITest extends BaseClass {
@@ -10,7 +10,7 @@ public class GmailAPITest extends BaseClass {
 	 * the AuthToken to complete the OAUTH2.0 
 	 * @throws Exception
 	 */
-	@BeforeMethod
+	@BeforeTest
 	public void gettingAuthToken() throws Exception {
 		BaseClass.constructAuthenticationURL("https://accounts.google.com","/o/oauth2/v2/auth","https://mail.google.com/",
 				"https://accounts.google.com/o/oauth2/auth",
@@ -18,7 +18,7 @@ public class GmailAPITest extends BaseClass {
 				"code","https://www.getpostman.com/oauth2/callback",
 				"empty");
 		BaseClass.driverInitialization();
-		BaseClass.getCodeThroughBrowserAuthentication("YourUsername", "yourpassword");
+		BaseClass.getCodeThroughBrowserAuthentication("yourusername", "yourpassword");
 		BaseClass.driverTearDown();
 		BaseClass.getBearerAccessToken();
 	}
@@ -29,14 +29,63 @@ public class GmailAPITest extends BaseClass {
 	 * This method tests the below Google API :
 	 * https://www.googleapis.com/gmail/v1/users/userId/profile
 	 * refer : https://developers.google.com/gmail/api/v1/reference/users/getProfile
-	 * @throws Exception
 	 */
-	@Test(enabled=true)
-	public void getCode() throws Exception {
+	@Test(priority = 1,enabled=true)
+	public void getCurrentUserProfile() {
 		GmailAPI TS1 = new GmailAPI();
 		TS1.getUserProfile("kovidmehta10@gmail.com",AccessToken);
 	}
 	
 	
+	@Test(priority=2,enabled=true)
+	public void listUserMessages() {
+		GmailAPI TS1 = new GmailAPI();
+		TS1.listUserMessages("kovidmehta10@gmail.com",AccessToken);
+	}
+	
+	@Test(priority=3,enabled=true)
+	public void getUserMessages() {
+		GmailAPI TS1 = new GmailAPI();
+		TS1.getUserMessages("kovidmehta10@gmail.com", AccessToken);
+	}
+	
+	@Test(priority=4,enabled=true)
+	public void deleteMessageFromGmail() {
+		GmailAPI TS1 = new GmailAPI();
+		TS1.deletMessageFromGmail("kovidmehta10@gmail.com", AccessToken);
+	}
+	
+	@Test(priority=5,enabled=true)
+	public void sendEmailfromGmail() {
+		GmailAPI TS1 = new GmailAPI();
+		TS1.sendMessageFromGmail("kovidmehta10@gmail.com", "kovidmehta10@gmail.com", "This message is sent from Rest Assured.", AccessToken);
+	}
+	
+	@Test(priority=6,enabled=true)
+	public void listUserDraftMessage() {
+		GmailAPI TS1 = new GmailAPI();
+		TS1.listUserDraftMessages("kovidmehta10@gmail.com", AccessToken);
+	}
+	
+	@Test(priority=7,enabled=true)
+	public void getDraftMessage() {
+		GmailAPI TS1 = new GmailAPI();
+		TS1.getDraftFromGmail("kovidmehta10@gmail.com", AccessToken);
+	}
+	
+	@Test(priority=8,enabled=true)
+	public void deleteDraftMessage() {
+		GmailAPI TS1 = new GmailAPI();
+		TS1.deleteDraftFromGmail("kovidmehta10@gmail.com", AccessToken);
+	}
+	
+	@Test(priority=9,enabled=true)
+	public void createDraftinGmail() {
+		GmailAPI TS1 = new GmailAPI();
+		TS1.createDraftinGmail("kovidmehta10@gmail.com", "This is the draft message created from Rest Assured.", AccessToken);
+	}
+	
+	//Add Calendar API in Different Class
+	//Add Google Task List APIs as well 
 	
 }
