@@ -23,6 +23,8 @@ public class BaseClass {
 	public static String URL;
 	public static String BrowserCode;
 	public static String AccessToken;
+	public static String Username = "kovidmehta10@gmail.com";
+	public static String Password = "newhoneybees@93";
 	
 	
 	/*****
@@ -73,7 +75,7 @@ public class BaseClass {
 	 * Created Date - 11/14/2019
 	 */
 	
-	public static void getCodeThroughBrowserAuthentication(String Username,String Password) throws Exception {
+	public static void getCodeThroughBrowserAuthentication() throws Exception {
 		driver.get(URL);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[type='email']"))).sendKeys(Username);
 		driver.findElement(By.xpath("//span[text()='Next']")).click();

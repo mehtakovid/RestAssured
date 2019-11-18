@@ -18,7 +18,7 @@ public class GmailAPITest extends BaseClass {
 				"code","https://www.getpostman.com/oauth2/callback",
 				"empty");
 		BaseClass.driverInitialization();
-		BaseClass.getCodeThroughBrowserAuthentication("yourusername", "yourpassword");
+		BaseClass.getCodeThroughBrowserAuthentication();
 		BaseClass.driverTearDown();
 		BaseClass.getBearerAccessToken();
 	}
@@ -84,8 +84,5 @@ public class GmailAPITest extends BaseClass {
 		GmailAPI TS1 = new GmailAPI();
 		TS1.createDraftinGmail("kovidmehta10@gmail.com", "This is the draft message created from Rest Assured.", AccessToken);
 	}
-	
-	//Add Calendar API in Different Class
-	//Add Google Task List APIs as well 
 	
 }
