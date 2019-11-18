@@ -81,6 +81,16 @@ public class BaseClass {
 		driver.findElement(By.xpath("//span[text()='Next']")).click();
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("input[type='password']"))).sendKeys(Password);
 		driver.findElement(By.xpath("//span[text()='Next']")).click();
+		Thread.sleep(5000);
+		if(!driver.findElements(By.xpath("//h1[contains(text(),'This')]")).isEmpty()) {
+			driver.findElement(By.xpath("//a[text()='Advanced']")).click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Go to getpostman.com (unsafe)']"))).click();
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//span[text()='Allow'])[2]"))).click();
+			Thread.sleep(2000);
+			wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[text()='Allow']"))).click();
+		}else {
+			System.out.println("App verified Directly.");
+		}
 		Thread.sleep(10000);
 		String[] arr =  driver.getCurrentUrl().split("&code=");
 		String code[] = arr[1].split("&scope=");

@@ -64,13 +64,14 @@ public class GoogleCalendarAPI {
 	}
 	
 	
-	//Body needs to be customized further to include relevant Params
+
 	public void createAnEvent(String AccessToken,String CalendarId,String Timezone, String startDate, String endDate) {
 		RestAssured.baseURI="https://www.googleapis.com";
 		
 		Response res = given().auth().oauth2(AccessToken)
 		.queryParam("sendUpdates", "all")
 		.pathParam("calendarId", CalendarId)
+		.contentType("application/json\r\n")
 		.body("{\r\n" + 
 				"  \"end\": {\r\n" + 
 				"    \"timeZone\":"+Timezone+",\r\n" + 
@@ -82,9 +83,9 @@ public class GoogleCalendarAPI {
 				"  }\r\n" + 
 				"}").
 		when()
-		.post("/calendar/v3/calendars/{calendarId}/events");
-//		then()
-//		.assertThat().statusCode(200).extract().response();
+		.post("/calendar/v3/calendars/{calendarId}/events").
+		then()
+		.assertThat().statusCode(200).extract().response();
 		
 		System.out.println("Create an Event Response : " +res.asString());
 		
