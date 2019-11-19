@@ -12,6 +12,8 @@ public class AbusiveExperienceAPITest {
 	 *****
 	 */
 	
+	AbusiveExperienceAPI apiTest = new AbusiveExperienceAPI();
+	
 	@DataProvider
 	public Object[][] AbusiveStatusTestData(){
 		Object[][] data = new Object[1][1];
@@ -19,15 +21,13 @@ public class AbusiveExperienceAPITest {
 		return data;
 	}
 	
-	@Test(dataProvider="AbusiveStatusTestData")
+	@Test(priority=1,dataProvider="AbusiveStatusTestData")
 	public void AbusiveStatusTestRun(String Website) {
-		AbusiveExperienceAPI apiTest = new AbusiveExperienceAPI();
 		apiTest.getAbusiveStatus(Website);
 	}
 	
-	@Test
+	@Test(priority=1)
 	public void ViolatingSitesTestRun() {
-		AbusiveExperienceAPI apiTest = new AbusiveExperienceAPI();
 		apiTest.getViolatingSites();
 	}
 

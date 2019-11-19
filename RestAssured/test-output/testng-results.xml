@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="6" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-11-18T16:14:50 IST" name="Default suite" finished-at="2019-11-18T16:14:53 IST" duration-ms="3597">
+  <suite started-at="2019-11-19T21:19:18 IST" name="Default suite" finished-at="2019-11-19T21:19:52 IST" duration-ms="33775">
     <groups>
     </groups>
-    <test started-at="2019-11-18T16:14:50 IST" name="Default test" finished-at="2019-11-18T16:14:53 IST" duration-ms="3597">
+    <test started-at="2019-11-19T21:19:18 IST" name="Default test" finished-at="2019-11-19T21:19:52 IST" duration-ms="33775">
       <class name="RestAssuredProject.CalendarAPITest">
-        <test-method signature="createAnEventTest()[pri:5, instance:RestAssuredProject.CalendarAPITest@43301423]" started-at="2019-11-18T16:14:50 IST" name="createAnEventTest" finished-at="2019-11-18T16:14:52 IST" duration-ms="2781" status="PASS">
+        <test-method is-config="true" signature="gettingAuthToken()[pri:0, instance:RestAssuredProject.CalendarAPITest@1ffe63b9]" started-at="2019-11-19T21:19:18 IST" name="gettingAuthToken" finished-at="2019-11-19T21:19:47 IST" duration-ms="28646" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createAnEventTest -->
-        <test-method signature="listUserCalendarSettingsTest()[pri:6, instance:RestAssuredProject.CalendarAPITest@43301423]" started-at="2019-11-18T16:14:52 IST" name="listUserCalendarSettingsTest" finished-at="2019-11-18T16:14:53 IST" duration-ms="749" status="PASS">
+        </test-method> <!-- gettingAuthToken -->
+        <test-method signature="getCalendarListTest()[pri:1, instance:RestAssuredProject.CalendarAPITest@1ffe63b9]" started-at="2019-11-19T21:19:47 IST" name="getCalendarListTest" finished-at="2019-11-19T21:19:48 IST" duration-ms="971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCalendarListTest -->
+        <test-method signature="getCalendarTest()[pri:2, instance:RestAssuredProject.CalendarAPITest@1ffe63b9]" started-at="2019-11-19T21:19:48 IST" name="getCalendarTest" finished-at="2019-11-19T21:19:49 IST" duration-ms="671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCalendarTest -->
+        <test-method signature="getCalendarColorsTest()[pri:3, instance:RestAssuredProject.CalendarAPITest@1ffe63b9]" started-at="2019-11-19T21:19:49 IST" name="getCalendarColorsTest" finished-at="2019-11-19T21:19:50 IST" duration-ms="688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCalendarColorsTest -->
+        <test-method signature="getCalendarEventListTest()[pri:4, instance:RestAssuredProject.CalendarAPITest@1ffe63b9]" started-at="2019-11-19T21:19:50 IST" name="getCalendarEventListTest" finished-at="2019-11-19T21:19:51 IST" duration-ms="1069" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCalendarEventListTest -->
+        <test-method signature="listUserCalendarSettingsTest()[pri:5, instance:RestAssuredProject.CalendarAPITest@1ffe63b9]" started-at="2019-11-19T21:19:51 IST" name="listUserCalendarSettingsTest" finished-at="2019-11-19T21:19:51 IST" duration-ms="637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- listUserCalendarSettingsTest -->
+        <test-method signature="createAnEventTest()[pri:6, instance:RestAssuredProject.CalendarAPITest@1ffe63b9]" started-at="2019-11-19T21:19:51 IST" name="createAnEventTest" finished-at="2019-11-19T21:19:52 IST" duration-ms="1022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAnEventTest -->
       </class> <!-- RestAssuredProject.CalendarAPITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
