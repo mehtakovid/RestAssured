@@ -33,56 +33,56 @@ public class GmailAPITest extends BaseClass {
 	@Test(priority = 1,enabled=true)
 	public void getCurrentUserProfile() {
 		GmailAPI TS1 = new GmailAPI();
-		TS1.getUserProfile("kovidmehta10@gmail.com",AccessToken);
+		TS1.getUserProfile(Username,AccessToken);
 	}
 	
 	
 	@Test(priority=2,enabled=true)
 	public void listUserMessages() {
 		GmailAPI TS1 = new GmailAPI();
-		TS1.listUserMessages("kovidmehta10@gmail.com",AccessToken);
+		TS1.listUserMessages(Username,AccessToken);
 	}
 	
 	@Test(priority=3,enabled=true)
 	public void getUserMessages() {
 		GmailAPI TS1 = new GmailAPI();
-		TS1.getUserMessages("kovidmehta10@gmail.com", AccessToken);
+		TS1.getUserMessages(Username, AccessToken);
 	}
 	
 	@Test(priority=4,enabled=true)
 	public void deleteMessageFromGmail() {
 		GmailAPI TS1 = new GmailAPI();
-		TS1.deletMessageFromGmail("kovidmehta10@gmail.com", AccessToken);
+		TS1.deletMessageFromGmail(Username, AccessToken);
 	}
 	
 	@Test(priority=5,enabled=true)
 	public void sendEmailfromGmail() {
 		GmailAPI TS1 = new GmailAPI();
-		TS1.sendMessageFromGmail("kovidmehta10@gmail.com", "kovidmehta10@gmail.com", "This message is sent from Rest Assured.", AccessToken);
+		TS1.sendMessageFromGmail(Username, Username, "This message is sent from Rest Assured.", AccessToken);
 	}
 	
 	@Test(priority=6,enabled=true)
 	public void listUserDraftMessage() {
 		GmailAPI TS1 = new GmailAPI();
-		TS1.listUserDraftMessages("kovidmehta10@gmail.com", AccessToken);
+		TS1.listUserDraftMessages(Username, AccessToken);
 	}
 	
 	@Test(priority=7,enabled=true)
 	public void getDraftMessage() {
 		GmailAPI TS1 = new GmailAPI();
-		TS1.getDraftFromGmail("kovidmehta10@gmail.com", AccessToken);
+		TS1.getDraftFromGmail(Username, AccessToken);
 	}
 	
 	@Test(priority=8,enabled=true)
 	public void deleteDraftMessage() {
 		GmailAPI TS1 = new GmailAPI();
-		TS1.deleteDraftFromGmail("kovidmehta10@gmail.com", AccessToken);
+		TS1.deleteDraftFromGmail(Username, AccessToken);
 	}
 	
 	@Test(priority=9,enabled=true)
 	public void createDraftinGmail() {
 		GmailAPI TS1 = new GmailAPI();
-		TS1.createDraftinGmail("kovidmehta10@gmail.com", "This is the draft message created from Rest Assured.", AccessToken);
+		TS1.createDraftinGmail(Username, "This is the draft message created from Rest Assured.", AccessToken);
 	}
 	
 }
