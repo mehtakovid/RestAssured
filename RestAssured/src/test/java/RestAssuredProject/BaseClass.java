@@ -24,7 +24,7 @@ public class BaseClass {
 	public static String BrowserCode;
 	public static String AccessToken;
 	public static String Username = "kovidmehta10@gmail.com";
-	public static String Password = "newhoneybees@93";
+	public static String Password = "yourpassword";
 	
 	
 	/*****
