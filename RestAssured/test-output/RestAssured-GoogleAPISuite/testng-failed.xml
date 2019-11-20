@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RestAssured-GoogleAPISuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GmailAPITest(failed)">
+    <classes>
+      <class name="RestAssuredProject.GmailAPITest">
+        <methods>
+          <include name="createDraftinGmail"/>
+          <include name="sendEmailfromGmail"/>
+          <include name="gettingAuthToken"/>
+        </methods>
+      </class> <!-- RestAssuredProject.GmailAPITest -->
+    </classes>
+  </test> <!-- GmailAPITest(failed) -->
+</suite> <!-- Failed suite [RestAssured-GoogleAPISuite] -->
