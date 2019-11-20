@@ -21,12 +21,12 @@ public class AbusiveExperienceAPITest {
 		return data;
 	}
 	
-	@Test(priority=1,dataProvider="AbusiveStatusTestData")
+	@Test(priority=1,dataProvider="AbusiveStatusTestData",enabled=true)
 	public void AbusiveStatusTestRun(String Website) {
 		apiTest.getAbusiveStatus(Website);
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1,enabled=true)
 	public void ViolatingSitesTestRun() {
 		apiTest.getViolatingSites();
 	}
