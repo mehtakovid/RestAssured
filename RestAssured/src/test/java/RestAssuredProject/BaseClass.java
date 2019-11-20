@@ -22,9 +22,9 @@ public class BaseClass {
 	public static WebDriverWait wait;
 	public static String URL;
 	public static String BrowserCode;
-	public static String AccessToken="ya29.ImCxB84G-U_Gzr68nhl8StpX0v_V7oP43Sq_qYp46VKPW7BWs8QbYtVVd0AfG4UwsCMtR3-5vrWIUi88yur4x1hN2Bmwf6BaRzQ5a6GWEln3YcHCdcqiS4wrh14z8VPHV08";
+	public static String AccessToken;
 	public static String Username = "kovidmehta10@gmail.com";
-	public static String Password = "newhoneybees@93";
+	public static String Password = "yourpassword";
 	
 	
 	/*****
