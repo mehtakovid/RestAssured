@@ -10,18 +10,18 @@ public class GmailAPITest extends BaseClass {
 	 * the AuthToken to complete the OAUTH2.0 
 	 * @throws Exception
 	 */
-//	@BeforeTest
-//	public void gettingAuthToken() throws Exception {
-//		BaseClass.constructAuthenticationURL("https://accounts.google.com","/o/oauth2/v2/auth","https://mail.google.com/",
-//				"https://accounts.google.com/o/oauth2/auth",
-//				"745077292106-oihr15fk3od8mn5i12eb1jlkk67352eh.apps.googleusercontent.com",
-//				"code","https://www.getpostman.com/oauth2/callback",
-//				"empty");
-//		BaseClass.driverInitialization();
-//		BaseClass.getCodeThroughBrowserAuthentication();
-//		BaseClass.driverTearDown();
-//		BaseClass.getBearerAccessToken();
-//	}
+	@BeforeTest
+	public void gettingAuthToken() throws Exception {
+		BaseClass.constructAuthenticationURL("https://accounts.google.com","/o/oauth2/v2/auth","https://mail.google.com/",
+				"https://accounts.google.com/o/oauth2/auth",
+				"745077292106-oihr15fk3od8mn5i12eb1jlkk67352eh.apps.googleusercontent.com",
+				"code","https://www.getpostman.com/oauth2/callback",
+				"empty");
+		BaseClass.driverInitialization();
+		BaseClass.getCodeThroughBrowserAuthentication();
+		BaseClass.driverTearDown();
+		BaseClass.getBearerAccessToken();
+	}
 	
 	
 	

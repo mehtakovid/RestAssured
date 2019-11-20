@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\komehta\AppData\Local\Temp\testng-eclipse--53047529\testng-customsuite.xml</span>
+                    <span>C:\Users\komehta\AppData\Local\Temp\testng-eclipse--1849720454\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">9 methods, 2 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="RestAssuredProject.GmailAPITest" class="method navigator-link" hash-for-method="createDraftinGmail">createDraftinGmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="RestAssuredProject.GmailAPITest" class="method navigator-link" hash-for-method="sendEmailfromGmail">sendEmailfromGmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,32 +121,37 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="RestAssuredProject.CalendarAPITest" class="method navigator-link" hash-for-method="createAnEventTest">createAnEventTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="RestAssuredProject.GmailAPITest" class="method navigator-link" hash-for-method="deleteDraftMessage">deleteDraftMessage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="RestAssuredProject.CalendarAPITest" class="method navigator-link" hash-for-method="getCalendarColorsTest">getCalendarColorsTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="RestAssuredProject.GmailAPITest" class="method navigator-link" hash-for-method="deleteMessageFromGmail">deleteMessageFromGmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="RestAssuredProject.CalendarAPITest" class="method navigator-link" hash-for-method="getCalendarEventListTest">getCalendarEventListTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="RestAssuredProject.GmailAPITest" class="method navigator-link" hash-for-method="getCurrentUserProfile">getCurrentUserProfile</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="RestAssuredProject.CalendarAPITest" class="method navigator-link" hash-for-method="getCalendarListTest">getCalendarListTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="RestAssuredProject.GmailAPITest" class="method navigator-link" hash-for-method="getDraftMessage">getDraftMessage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="RestAssuredProject.CalendarAPITest" class="method navigator-link" hash-for-method="getCalendarTest">getCalendarTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="RestAssuredProject.GmailAPITest" class="method navigator-link" hash-for-method="getUserMessages">getUserMessages</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="RestAssuredProject.CalendarAPITest" class="method navigator-link" hash-for-method="listUserCalendarSettingsTest">listUserCalendarSettingsTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="RestAssuredProject.GmailAPITest" class="method navigator-link" hash-for-method="listUserDraftMessage">listUserDraftMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="RestAssuredProject.GmailAPITest" class="method navigator-link" hash-for-method="listUserMessages">listUserMessages</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -142,52 +166,222 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">RestAssuredProject.CalendarAPITest</span>
+              <img src="failed.png"/>
+              <span class="class-name">RestAssuredProject.GmailAPITest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="createAnEventTest">
-                  </a> <!-- createAnEventTest -->
-                  <span class="method-name">createAnEventTest</span>
+                  <a name="createDraftinGmail">
+                  </a> <!-- createDraftinGmail -->
+                  <span class="method-name">createDraftinGmail</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;400&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at jdk.internal.reflect.GeneratedMethodAccessor42.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at RestAssuredProject.GmailAPI.createDraftinGmail(GmailAPI.java:286)
+	at RestAssuredProject.GmailAPITest.createDraftinGmail(GmailAPITest.java:109)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="getCalendarColorsTest">
-                  </a> <!-- getCalendarColorsTest -->
-                  <span class="method-name">getCalendarColorsTest</span>
+                  <a name="sendEmailfromGmail">
+                  </a> <!-- sendEmailfromGmail -->
+                  <span class="method-name">sendEmailfromGmail</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;400&gt;.
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:190)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:168)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:101)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1217)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)
+	at io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)
+	at RestAssuredProject.GmailAPI.sendMessageFromGmail(GmailAPI.java:171)
+	at RestAssuredProject.GmailAPITest.sendEmailfromGmail(GmailAPITest.java:72)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">RestAssuredProject.GmailAPITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteDraftMessage">
+                  </a> <!-- deleteDraftMessage -->
+                  <span class="method-name">deleteDraftMessage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="getCalendarEventListTest">
-                  </a> <!-- getCalendarEventListTest -->
-                  <span class="method-name">getCalendarEventListTest</span>
+                  <a name="deleteMessageFromGmail">
+                  </a> <!-- deleteMessageFromGmail -->
+                  <span class="method-name">deleteMessageFromGmail</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="getCalendarListTest">
-                  </a> <!-- getCalendarListTest -->
-                  <span class="method-name">getCalendarListTest</span>
+                  <a name="getCurrentUserProfile">
+                  </a> <!-- getCurrentUserProfile -->
+                  <span class="method-name">getCurrentUserProfile</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="getCalendarTest">
-                  </a> <!-- getCalendarTest -->
-                  <span class="method-name">getCalendarTest</span>
+                  <a name="getDraftMessage">
+                  </a> <!-- getDraftMessage -->
+                  <span class="method-name">getDraftMessage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="listUserCalendarSettingsTest">
-                  </a> <!-- listUserCalendarSettingsTest -->
-                  <span class="method-name">listUserCalendarSettingsTest</span>
+                  <a name="getUserMessages">
+                  </a> <!-- getUserMessages -->
+                  <span class="method-name">getUserMessages</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="listUserDraftMessage">
+                  </a> <!-- listUserDraftMessage -->
+                  <span class="method-name">listUserDraftMessage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="listUserMessages">
+                  </a> <!-- listUserMessages -->
+                  <span class="method-name">listUserMessages</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -195,7 +389,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\komehta\AppData\Local\Temp\testng-eclipse--53047529\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\komehta\AppData\Local\Temp\testng-eclipse--1849720454\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -204,7 +398,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;RestAssuredProject.CalendarAPITest&quot;/&gt;
+      &lt;class name=&quot;RestAssuredProject.GmailAPITest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -244,36 +438,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getCalendarEventListTest')
-data.setCell(0, 2, 'RestAssuredProject.CalendarAPITest')
-data.setCell(0, 3, 1069);
+data.setCell(0, 1, 'getCurrentUserProfile')
+data.setCell(0, 2, 'RestAssuredProject.GmailAPITest')
+data.setCell(0, 3, 4325);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'createAnEventTest')
-data.setCell(1, 2, 'RestAssuredProject.CalendarAPITest')
-data.setCell(1, 3, 1022);
+data.setCell(1, 1, 'listUserMessages')
+data.setCell(1, 2, 'RestAssuredProject.GmailAPITest')
+data.setCell(1, 3, 1057);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'getCalendarListTest')
-data.setCell(2, 2, 'RestAssuredProject.CalendarAPITest')
-data.setCell(2, 3, 971);
+data.setCell(2, 1, 'getUserMessages')
+data.setCell(2, 2, 'RestAssuredProject.GmailAPITest')
+data.setCell(2, 3, 1018);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'getCalendarColorsTest')
-data.setCell(3, 2, 'RestAssuredProject.CalendarAPITest')
-data.setCell(3, 3, 688);
+data.setCell(3, 1, 'deleteMessageFromGmail')
+data.setCell(3, 2, 'RestAssuredProject.GmailAPITest')
+data.setCell(3, 3, 946);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'getCalendarTest')
-data.setCell(4, 2, 'RestAssuredProject.CalendarAPITest')
-data.setCell(4, 3, 671);
+data.setCell(4, 1, 'deleteDraftMessage')
+data.setCell(4, 2, 'RestAssuredProject.GmailAPITest')
+data.setCell(4, 3, 862);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'listUserCalendarSettingsTest')
-data.setCell(5, 2, 'RestAssuredProject.CalendarAPITest')
-data.setCell(5, 3, 637);
+data.setCell(5, 1, 'getDraftMessage')
+data.setCell(5, 2, 'RestAssuredProject.GmailAPITest')
+data.setCell(5, 3, 847);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'listUserDraftMessage')
+data.setCell(6, 2, 'RestAssuredProject.GmailAPITest')
+data.setCell(6, 3, 775);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'sendEmailfromGmail')
+data.setCell(7, 2, 'RestAssuredProject.GmailAPITest')
+data.setCell(7, 3, 528);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'createDraftinGmail')
+data.setCell(8, 2, 'RestAssuredProject.GmailAPITest')
+data.setCell(8, 3, 405);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -299,34 +505,46 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">RestAssuredProject.CalendarAPITest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">gettingAuthToken</span>
+              <div class="chronological-class-name">RestAssuredProject.GmailAPITest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">getCurrentUserProfile</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="test-method">
-                <span class="method-name">getCalendarListTest</span>
-                <span class="method-start">28679 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">getCalendarTest</span>
-                <span class="method-start">29659 ms</span>
+                <span class="method-name">listUserMessages</span>
+                <span class="method-start">4338 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">getCalendarColorsTest</span>
-                <span class="method-start">30333 ms</span>
+                <span class="method-name">getUserMessages</span>
+                <span class="method-start">5398 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">getCalendarEventListTest</span>
-                <span class="method-start">31024 ms</span>
+                <span class="method-name">deleteMessageFromGmail</span>
+                <span class="method-start">6419 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">listUserCalendarSettingsTest</span>
-                <span class="method-start">32099 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">sendEmailfromGmail</span>
+                <span class="method-start">7370 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">createAnEventTest</span>
-                <span class="method-start">32739 ms</span>
+                <span class="method-name">listUserDraftMessage</span>
+                <span class="method-start">7912 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getDraftMessage</span>
+                <span class="method-start">8691 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteDraftMessage</span>
+                <span class="method-start">9542 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createDraftinGmail</span>
+                <span class="method-start">10409 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
