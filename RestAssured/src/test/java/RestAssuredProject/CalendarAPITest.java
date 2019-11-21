@@ -3,6 +3,8 @@ package RestAssuredProject;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.LogStatus;
+
 public class CalendarAPITest extends BaseClass {
 	
 	/**Creating the Instance of the Logic Class*/
@@ -30,7 +32,14 @@ public class CalendarAPITest extends BaseClass {
 	 */
 	@Test(priority=1,enabled=true)
 	public void getCalendarListTest() {
+		try {
+		logger = extent.startTest("Get Calendar List Test.");
 		TS1.getCalendarList(AccessToken,Username);
+		logger.log(LogStatus.PASS, "Get Calendar List Test Passed.");
+		}
+		catch(Exception e) {
+			logger.log(LogStatus.FAIL, "Get Calendar List Failed.");
+		}
 	}
 	
 	/***
@@ -38,7 +47,14 @@ public class CalendarAPITest extends BaseClass {
 	 */
 	@Test(priority=2,enabled=true)
 	public void getCalendarTest() {
+		try {
+		logger = extent.startTest("Get Calendar Test Started.");
 		TS1.getCalendar(AccessToken,Username);
+		logger.log(LogStatus.PASS, "Get Calendar test passed.");
+		}
+		catch(Exception e) {
+		logger.log(LogStatus.FAIL, "Get Calendar test failed.");
+		}
 	}
 	
 	/****
@@ -46,7 +62,14 @@ public class CalendarAPITest extends BaseClass {
 	 */
 	@Test(priority=3,enabled=true)
 	public void getCalendarColorsTest() {
+		try {
+		logger = extent.startTest("Get Calendar Colors Test.");
 		TS1.getCalendarColors(AccessToken);
+		logger.log(LogStatus.PASS, "Get Calendar colors Test Passed.");
+		}
+		catch(Exception e) {
+		logger.log(LogStatus.FAIL, "Get Calendar colors Failed.");
+		}
 	}
 	
 	/****
@@ -54,7 +77,14 @@ public class CalendarAPITest extends BaseClass {
 	 */
 	@Test(priority=4,enabled=true)
 	public void getCalendarEventListTest() {
+		try {
+		logger = extent.startTest("Get Calendar Event List Test.");
 		TS1.getCalendarEventList(AccessToken,Username);
+		logger.log(LogStatus.PASS, "Get Calendar Event List Passed.");
+		}
+		catch(Exception e) {
+		logger.log(LogStatus.FAIL, "Get Calendar event list failed.");
+		}
 	}
 	
 	
@@ -63,7 +93,14 @@ public class CalendarAPITest extends BaseClass {
 	 */
 	@Test(priority=5,enabled=true)
 	public void listUserCalendarSettingsTest() {
+		try {
+		logger=extent.startTest("List User Calendar Test.");
 		TS1.listUserCalendarSettings(AccessToken);
+		logger.log(LogStatus.PASS, "List user calendar Test passed.");
+		}
+		catch(Exception e) {
+			logger.log(LogStatus.FAIL, "List user calendar Test failed.");
+		}
 	}
 	
 	/****
@@ -71,7 +108,14 @@ public class CalendarAPITest extends BaseClass {
 	 */
 	@Test(priority=6,enabled=true)
 	public void createAnEventTest() {
+		try {
+		logger=extent.startTest("Create an Event Test.");
 		TS1.createAnEvent(AccessToken, Username,"Asia/Kolkata","2019-11-28", "2019-11-29");
+		logger.log(LogStatus.PASS,"Create an Event Test Passed.");
+		}
+		catch(Exception e) {
+		logger.log(LogStatus.FAIL, "Create an Event Test Failed.");
+		}
 	}
 	
 	
