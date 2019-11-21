@@ -43,6 +43,7 @@ public class BaseClass {
 		.addSystemInfo("Username", "Kovid Mehta")
 		.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
 	}
+
 	
 	
 	/*****
