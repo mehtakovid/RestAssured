@@ -2,11 +2,18 @@ package RestAssuredProject;
 
 import static io.restassured.RestAssured.given;
 
+import java.io.File;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
@@ -25,6 +32,18 @@ public class BaseClass {
 	public static String AccessToken;
 	public static String Username = "kovidmehta10@gmail.com";
 	public static String Password = "yourpassword";
+	public static ExtentReports extent;
+	public static ExtentTest logger;
+	
+	@BeforeSuite
+	public void reportSetup() {
+		extent = new ExtentReports (System.getProperty("user.dir")+"/test-output/GoogleAPISuite.html",true);
+		extent
+		.addSystemInfo("Environment", "Test")
+		.addSystemInfo("Username", "Kovid Mehta")
+		.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
+	}
+
 	
 	
 	/*****
@@ -126,5 +145,9 @@ public class BaseClass {
 		AccessToken = json.get("access_token");
 	}
 	
-	
+	@AfterSuite
+	public void reportTearDown() {
+		extent.flush();
+		extent.close();
+	}
 }

@@ -6,7 +6,9 @@
       <class name="RestAssuredProject.GmailAPITest">
         <methods>
           <include name="createDraftinGmail"/>
+          <include name="reportSetup"/>
           <include name="sendEmailfromGmail"/>
+          <include name="reportTearDown"/>
           <include name="gettingAuthToken"/>
         </methods>
       </class> <!-- RestAssuredProject.GmailAPITest -->
