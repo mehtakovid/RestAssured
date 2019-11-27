@@ -2,64 +2,64 @@
 <testng-results ignored="0" total="17" passed="15" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-11-21T20:02:14 IST" name="RestAssured-GoogleAPISuite" finished-at="2019-11-21T20:06:15 IST" duration-ms="241513">
+  <suite started-at="2019-11-25T21:35:29 IST" name="RestAssured-GoogleAPISuite" finished-at="2019-11-25T21:39:37 IST" duration-ms="248091">
     <groups>
     </groups>
-    <test started-at="2019-11-21T20:02:14 IST" name="CalendarAPITest" finished-at="2019-11-21T20:03:09 IST" duration-ms="55282">
+    <test started-at="2019-11-25T21:35:29 IST" name="CalendarAPITest" finished-at="2019-11-25T21:36:10 IST" duration-ms="40337">
       <class name="RestAssuredProject.CalendarAPITest">
-        <test-method is-config="true" signature="gettingAuthToken()[pri:0, instance:RestAssuredProject.CalendarAPITest@1f0f1111]" started-at="2019-11-21T20:02:14 IST" name="gettingAuthToken" finished-at="2019-11-21T20:02:57 IST" duration-ms="42839" status="PASS">
+        <test-method is-config="true" signature="gettingAuthToken()[pri:0, instance:RestAssuredProject.CalendarAPITest@1f0f1111]" started-at="2019-11-25T21:35:29 IST" name="gettingAuthToken" finished-at="2019-11-25T21:36:04 IST" duration-ms="34254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gettingAuthToken -->
-        <test-method signature="getCalendarListTest()[pri:1, instance:RestAssuredProject.CalendarAPITest@1f0f1111]" started-at="2019-11-21T20:02:57 IST" name="getCalendarListTest" finished-at="2019-11-21T20:02:58 IST" duration-ms="1191" status="PASS">
+        <test-method signature="getCalendarListTest()[pri:1, instance:RestAssuredProject.CalendarAPITest@1f0f1111]" started-at="2019-11-25T21:36:04 IST" name="getCalendarListTest" finished-at="2019-11-25T21:36:05 IST" duration-ms="1094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCalendarListTest -->
-        <test-method signature="getCalendarTest()[pri:2, instance:RestAssuredProject.CalendarAPITest@1f0f1111]" started-at="2019-11-21T20:02:58 IST" name="getCalendarTest" finished-at="2019-11-21T20:03:00 IST" duration-ms="1902" status="PASS">
+        <test-method signature="getCalendarTest()[pri:2, instance:RestAssuredProject.CalendarAPITest@1f0f1111]" started-at="2019-11-25T21:36:05 IST" name="getCalendarTest" finished-at="2019-11-25T21:36:06 IST" duration-ms="896" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCalendarTest -->
-        <test-method signature="getCalendarColorsTest()[pri:3, instance:RestAssuredProject.CalendarAPITest@1f0f1111]" started-at="2019-11-21T20:03:00 IST" name="getCalendarColorsTest" finished-at="2019-11-21T20:03:03 IST" duration-ms="3340" status="PASS">
+        <test-method signature="getCalendarColorsTest()[pri:3, instance:RestAssuredProject.CalendarAPITest@1f0f1111]" started-at="2019-11-25T21:36:06 IST" name="getCalendarColorsTest" finished-at="2019-11-25T21:36:06 IST" duration-ms="820" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCalendarColorsTest -->
-        <test-method signature="getCalendarEventListTest()[pri:4, instance:RestAssuredProject.CalendarAPITest@1f0f1111]" started-at="2019-11-21T20:03:03 IST" name="getCalendarEventListTest" finished-at="2019-11-21T20:03:05 IST" duration-ms="1506" status="PASS">
+        <test-method signature="getCalendarEventListTest()[pri:4, instance:RestAssuredProject.CalendarAPITest@1f0f1111]" started-at="2019-11-25T21:36:06 IST" name="getCalendarEventListTest" finished-at="2019-11-25T21:36:08 IST" duration-ms="1279" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCalendarEventListTest -->
-        <test-method signature="listUserCalendarSettingsTest()[pri:5, instance:RestAssuredProject.CalendarAPITest@1f0f1111]" started-at="2019-11-21T20:03:05 IST" name="listUserCalendarSettingsTest" finished-at="2019-11-21T20:03:08 IST" duration-ms="2922" status="PASS">
+        <test-method signature="listUserCalendarSettingsTest()[pri:5, instance:RestAssuredProject.CalendarAPITest@1f0f1111]" started-at="2019-11-25T21:36:08 IST" name="listUserCalendarSettingsTest" finished-at="2019-11-25T21:36:08 IST" duration-ms="716" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- listUserCalendarSettingsTest -->
-        <test-method signature="createAnEventTest()[pri:6, instance:RestAssuredProject.CalendarAPITest@1f0f1111]" started-at="2019-11-21T20:03:08 IST" name="createAnEventTest" finished-at="2019-11-21T20:03:09 IST" duration-ms="1432" status="PASS">
+        <test-method signature="createAnEventTest()[pri:6, instance:RestAssuredProject.CalendarAPITest@1f0f1111]" started-at="2019-11-25T21:36:08 IST" name="createAnEventTest" finished-at="2019-11-25T21:36:10 IST" duration-ms="1122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAnEventTest -->
       </class> <!-- RestAssuredProject.CalendarAPITest -->
     </test> <!-- CalendarAPITest -->
-    <test started-at="2019-11-21T20:03:09 IST" name="GmailAPITest" finished-at="2019-11-21T20:03:56 IST" duration-ms="46564">
+    <test started-at="2019-11-25T21:36:10 IST" name="GmailAPITest" finished-at="2019-11-25T21:36:44 IST" duration-ms="34274">
       <class name="RestAssuredProject.GmailAPITest">
-        <test-method is-config="true" signature="gettingAuthToken()[pri:0, instance:RestAssuredProject.GmailAPITest@5ae50ce6]" started-at="2019-11-21T20:03:09 IST" name="gettingAuthToken" finished-at="2019-11-21T20:03:45 IST" duration-ms="35666" status="PASS">
+        <test-method is-config="true" signature="gettingAuthToken()[pri:0, instance:RestAssuredProject.GmailAPITest@5ae50ce6]" started-at="2019-11-25T21:36:10 IST" name="gettingAuthToken" finished-at="2019-11-25T21:36:38 IST" duration-ms="27811" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gettingAuthToken -->
-        <test-method signature="getCurrentUserProfile()[pri:1, instance:RestAssuredProject.GmailAPITest@5ae50ce6]" started-at="2019-11-21T20:03:45 IST" name="getCurrentUserProfile" finished-at="2019-11-21T20:03:46 IST" duration-ms="856" status="PASS">
+        <test-method signature="getCurrentUserProfile()[pri:1, instance:RestAssuredProject.GmailAPITest@5ae50ce6]" started-at="2019-11-25T21:36:38 IST" name="getCurrentUserProfile" finished-at="2019-11-25T21:36:38 IST" duration-ms="896" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getCurrentUserProfile -->
-        <test-method signature="listUserMessages()[pri:2, instance:RestAssuredProject.GmailAPITest@5ae50ce6]" started-at="2019-11-21T20:03:46 IST" name="listUserMessages" finished-at="2019-11-21T20:03:47 IST" duration-ms="1010" status="PASS">
+        <test-method signature="listUserMessages()[pri:2, instance:RestAssuredProject.GmailAPITest@5ae50ce6]" started-at="2019-11-25T21:36:38 IST" name="listUserMessages" finished-at="2019-11-25T21:36:39 IST" duration-ms="684" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- listUserMessages -->
-        <test-method signature="getUserMessages()[pri:3, instance:RestAssuredProject.GmailAPITest@5ae50ce6]" started-at="2019-11-21T20:03:47 IST" name="getUserMessages" finished-at="2019-11-21T20:03:48 IST" duration-ms="969" status="PASS">
+        <test-method signature="getUserMessages()[pri:3, instance:RestAssuredProject.GmailAPITest@5ae50ce6]" started-at="2019-11-25T21:36:39 IST" name="getUserMessages" finished-at="2019-11-25T21:36:40 IST" duration-ms="892" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserMessages -->
-        <test-method signature="deleteMessageFromGmail()[pri:4, instance:RestAssuredProject.GmailAPITest@5ae50ce6]" started-at="2019-11-21T20:03:48 IST" name="deleteMessageFromGmail" finished-at="2019-11-21T20:03:49 IST" duration-ms="1409" status="PASS">
+        <test-method signature="deleteMessageFromGmail()[pri:4, instance:RestAssuredProject.GmailAPITest@5ae50ce6]" started-at="2019-11-25T21:36:40 IST" name="deleteMessageFromGmail" finished-at="2019-11-25T21:36:41 IST" duration-ms="817" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteMessageFromGmail -->
-        <test-method signature="sendEmailfromGmail()[pri:5, instance:RestAssuredProject.GmailAPITest@5ae50ce6]" started-at="2019-11-21T20:03:49 IST" name="sendEmailfromGmail" finished-at="2019-11-21T20:03:51 IST" duration-ms="1533" status="FAIL">
+        <test-method signature="sendEmailfromGmail()[pri:5, instance:RestAssuredProject.GmailAPITest@5ae50ce6]" started-at="2019-11-25T21:36:41 IST" name="sendEmailfromGmail" finished-at="2019-11-25T21:36:41 IST" duration-ms="320" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -142,19 +142,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sendEmailfromGmail -->
-        <test-method signature="listUserDraftMessage()[pri:6, instance:RestAssuredProject.GmailAPITest@5ae50ce6]" started-at="2019-11-21T20:03:51 IST" name="listUserDraftMessage" finished-at="2019-11-21T20:03:52 IST" duration-ms="1898" status="PASS">
+        <test-method signature="listUserDraftMessage()[pri:6, instance:RestAssuredProject.GmailAPITest@5ae50ce6]" started-at="2019-11-25T21:36:41 IST" name="listUserDraftMessage" finished-at="2019-11-25T21:36:42 IST" duration-ms="883" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- listUserDraftMessage -->
-        <test-method signature="getDraftMessage()[pri:7, instance:RestAssuredProject.GmailAPITest@5ae50ce6]" started-at="2019-11-21T20:03:52 IST" name="getDraftMessage" finished-at="2019-11-21T20:03:54 IST" duration-ms="1951" status="PASS">
+        <test-method signature="getDraftMessage()[pri:7, instance:RestAssuredProject.GmailAPITest@5ae50ce6]" started-at="2019-11-25T21:36:42 IST" name="getDraftMessage" finished-at="2019-11-25T21:36:43 IST" duration-ms="761" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDraftMessage -->
-        <test-method signature="deleteDraftMessage()[pri:8, instance:RestAssuredProject.GmailAPITest@5ae50ce6]" started-at="2019-11-21T20:03:54 IST" name="deleteDraftMessage" finished-at="2019-11-21T20:03:55 IST" duration-ms="899" status="PASS">
+        <test-method signature="deleteDraftMessage()[pri:8, instance:RestAssuredProject.GmailAPITest@5ae50ce6]" started-at="2019-11-25T21:36:43 IST" name="deleteDraftMessage" finished-at="2019-11-25T21:36:44 IST" duration-ms="798" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteDraftMessage -->
-        <test-method signature="createDraftinGmail()[pri:9, instance:RestAssuredProject.GmailAPITest@5ae50ce6]" started-at="2019-11-21T20:03:55 IST" name="createDraftinGmail" finished-at="2019-11-21T20:03:56 IST" duration-ms="315" status="FAIL">
+        <test-method signature="createDraftinGmail()[pri:9, instance:RestAssuredProject.GmailAPITest@5ae50ce6]" started-at="2019-11-25T21:36:44 IST" name="createDraftinGmail" finished-at="2019-11-25T21:36:44 IST" duration-ms="350" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -236,13 +236,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- createDraftinGmail -->
       </class> <!-- RestAssuredProject.GmailAPITest -->
     </test> <!-- GmailAPITest -->
-    <test started-at="2019-11-21T20:03:56 IST" name="AbusiveExperienceAPITest" finished-at="2019-11-21T20:06:15 IST" duration-ms="139474">
+    <test started-at="2019-11-25T21:36:44 IST" name="AbusiveExperienceAPITest" finished-at="2019-11-25T21:39:37 IST" duration-ms="173316">
       <class name="RestAssuredProject.AbusiveExperienceAPITest">
-        <test-method is-config="true" signature="reportSetup()[pri:0, instance:RestAssuredProject.AbusiveExperienceAPITest@703580bf]" started-at="2019-11-21T20:02:13 IST" name="reportSetup" finished-at="2019-11-21T20:02:14 IST" duration-ms="351" status="PASS">
+        <test-method is-config="true" signature="reportSetup()[pri:0, instance:RestAssuredProject.AbusiveExperienceAPITest@703580bf]" started-at="2019-11-25T21:35:29 IST" name="reportSetup" finished-at="2019-11-25T21:35:29 IST" duration-ms="320" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportSetup -->
-        <test-method signature="AbusiveStatusTestRun(java.lang.String)[pri:1, instance:RestAssuredProject.AbusiveExperienceAPITest@703580bf]" started-at="2019-11-21T20:03:56 IST" name="AbusiveStatusTestRun" data-provider="AbusiveStatusTestData" finished-at="2019-11-21T20:03:58 IST" duration-ms="2158" status="PASS">
+        <test-method signature="AbusiveStatusTestRun(java.lang.String)[pri:1, instance:RestAssuredProject.AbusiveExperienceAPITest@703580bf]" started-at="2019-11-25T21:36:44 IST" name="AbusiveStatusTestRun" data-provider="AbusiveStatusTestData" finished-at="2019-11-25T21:36:46 IST" duration-ms="1924" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -253,11 +253,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AbusiveStatusTestRun -->
-        <test-method signature="ViolatingSitesTestRun()[pri:1, instance:RestAssuredProject.AbusiveExperienceAPITest@703580bf]" started-at="2019-11-21T20:03:58 IST" name="ViolatingSitesTestRun" finished-at="2019-11-21T20:06:15 IST" duration-ms="137289" status="PASS">
+        <test-method signature="ViolatingSitesTestRun()[pri:1, instance:RestAssuredProject.AbusiveExperienceAPITest@703580bf]" started-at="2019-11-25T21:36:46 IST" name="ViolatingSitesTestRun" finished-at="2019-11-25T21:39:37 IST" duration-ms="171376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ViolatingSitesTestRun -->
-        <test-method is-config="true" signature="reportTearDown()[pri:0, instance:RestAssuredProject.AbusiveExperienceAPITest@703580bf]" started-at="2019-11-21T20:06:15 IST" name="reportTearDown" finished-at="2019-11-21T20:06:16 IST" duration-ms="602" status="PASS">
+        <test-method is-config="true" signature="reportTearDown()[pri:0, instance:RestAssuredProject.AbusiveExperienceAPITest@703580bf]" started-at="2019-11-25T21:39:37 IST" name="reportTearDown" finished-at="2019-11-25T21:39:38 IST" duration-ms="1052" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportTearDown -->
