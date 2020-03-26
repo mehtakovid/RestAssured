@@ -31,7 +31,7 @@ public class BaseClass {
 	public static String BrowserCode;
 	public static String AccessToken;
 	public static String Username = "kovidmehta10@gmail.com";
-	public static String Password = "yourpasswordhere";
+	public static String Password = "yourpassword";
 	public static ExtentReports extent;
 	public static ExtentTest logger;
 	
@@ -53,7 +53,7 @@ public class BaseClass {
 	 */
 	
 	public static void driverInitialization() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\komehta\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\komehta\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
 		driver = new ChromeDriver();
 		wait=new WebDriverWait(driver,10);
 	}
