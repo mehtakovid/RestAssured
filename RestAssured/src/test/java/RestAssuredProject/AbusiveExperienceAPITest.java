@@ -10,7 +10,7 @@ public class AbusiveExperienceAPITest extends BaseClass {
 	
 	/*****Views Abusive Experience Report data, and 
 	 * gets a list of sites that have a significant 
-	 * number of abusive experiences.
+	 * number of abusive experiences
 	 *****
 	 */
 	

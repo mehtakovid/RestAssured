@@ -36,6 +36,7 @@ public class CalendarAPITest extends BaseClass {
 		logger = extent.startTest("Get Calendar List Test.");
 		TS1.getCalendarList(AccessToken,Username);
 		logger.log(LogStatus.PASS, "Get Calendar List Test Passed.");
+		extent.endTest(logger);
 		}
 		catch(Exception e) {
 			logger.log(LogStatus.FAIL, "Get Calendar List Failed.");
